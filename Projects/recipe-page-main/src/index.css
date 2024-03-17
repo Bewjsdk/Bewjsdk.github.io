@@ -1,0 +1,50 @@
+@font-face {
+  font-family: YoungSerif;
+  font-weight: 400;
+  src: url('/public/fonts/young-serif/YoungSerif-Regular.ttf');
+}
+
+@font-face {
+  font-family: Outfit;
+  src: url('/public/fonts/outfit/Outfit-VariableFont_wght.ttf');
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  font-family: Outfit, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+  font-size: clamp(12px, 2.5vw, 16px);
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+body {
+  min-height: 100vh;
+}
+
+
+/* button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+} */
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background-color: #ffffff;
+  }
+}
