@@ -1,5 +1,0 @@
-- navbar v42323
-- sidebar 2 side
-- footer 2
-- main
-tag v2.0
