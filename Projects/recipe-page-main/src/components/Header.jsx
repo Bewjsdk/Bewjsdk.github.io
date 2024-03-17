@@ -21,7 +21,10 @@ function Header({ data }) {
 
       {/* Bottom Header (Preparation time) */}
       <div className='recipe-header-bottom'>
-        <Lists type='ul' topic={topic} lists={lists} />
+        <h2>{topic}</h2>
+        <ul className='prepare-lists'>
+          <Lists lists={lists} />
+        </ul>
       </div>
     </header>
   )
