@@ -1,0 +1,64 @@
+@use './colors';
+
+@import './button';
+
+// Setting Flex
+@mixin flex($direction, $justify, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+/* Background */
+#root {
+  min-height: 100dvh;
+  background: colors.$offBlack;
+  @include flex(row, center, center);
+}
+
+/* Card Container */
+.card-container {
+  background: colors.$darkGrey;
+  padding-inline: 3em;
+  width: 30rem;
+  padding-block: 2.5em;
+  border-radius: 1em;
+
+  /* Card Profile */
+  .card-profile {
+
+    /* Card header */
+    &-header {
+      @include flex(column, center, center);
+      /* Profile Picture */
+      > img {
+        border-radius: 50%;
+        width: 7rem;
+        margin-block-end: 1.25em;
+      }
+      /* Profile Name */
+      > h1 {
+        font-weight: 600;
+      }
+      /* Country Information */
+      .country-info {
+        color: colors.$green;
+        font-weight: 600;
+        margin-block-end: 1.5em;
+      }
+      /* Other text */
+      > p:not(.country-info) {
+        color: colors.$white;
+        opacity: 0.7;
+        margin-block-end: 1em;
+      }
+    }
+
+    /* Card Social Links */
+    &-social {
+      @include flex(column, center, center);
+      row-gap: 1em;
+    }
+  }
+}
