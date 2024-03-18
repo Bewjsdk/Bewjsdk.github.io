@@ -1,0 +1,36 @@
+@use '../assets' as *;
+
+/* Header Section */
+.recipe-header {
+
+  > img {
+    border-radius: 1em;
+  }
+
+  /* Top Header */
+  &-top {
+    > h1 {
+      margin-block: 0.5em;
+    }
+  }
+
+  /* Bottom Header */
+  &-bottom {
+    background: $roseWhite;
+    margin-block: 2em;
+    padding-block: 1.5em;
+    padding-inline: 2em;
+    border-radius: 1em;
+
+    > h3 {
+      font-family: inherit;
+      font-size: 1.25rem;
+      color: $pri_darkRaspberry;
+      margin-block-end: 0.5em;
+    }
+
+    & li::marker {
+      color: $pri_darkRaspberry;
+    }
+  }
+}

@@ -1,6 +1,9 @@
 function Footer() {
   return (
-    <div>Challenge by Frontend Mentor. Coded by Your Name Here.</div>
+    <footer className="footer-container">
+      Challenge by <a href="https://www.frontendmentor.io/home">Frontend Mentor</a>. 
+      Coded by <a href="#">JSDK</a>.
+    </footer>
   )
 }
 

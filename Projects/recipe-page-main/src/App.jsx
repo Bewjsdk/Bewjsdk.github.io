@@ -3,6 +3,8 @@ import Header from './components/Header';
 import Section from './components/Section';
 import { recipeData } from './data';
 
+import './App.scss';
+
 function App() {
   const [preparationTime, ...otherRecipeData] = recipeData;
 

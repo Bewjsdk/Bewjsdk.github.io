@@ -19,6 +19,7 @@ function Section({data}) {
     <section className={`section-${topic.toLowerCase()}`}>
       <h2>{topic}</h2>
       {listElements}
+      <hr />
     </section>
   )
 }

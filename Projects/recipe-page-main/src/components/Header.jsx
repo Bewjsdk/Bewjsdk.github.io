@@ -8,9 +8,10 @@ function Header({ data }) {
     // Recipe Header
     <header className='recipe-header'>
 
+      <img src={foodPic} alt='Omelette Picture' />
+      
       {/* Top Header (Image and some content) */}
       <div className="recipe-header-top">
-        <img src={foodPic} alt='Omelette Picture' />
         <h1>Simple Omeletter Recipe</h1>
         <p>
           An easy and quick dish, perfect for any meal.
@@ -21,7 +22,7 @@ function Header({ data }) {
 
       {/* Bottom Header (Preparation time) */}
       <div className='recipe-header-bottom'>
-        <h2>{topic}</h2>
+        <h3>{topic}</h3>
         <ul className='prepare-lists'>
           <Lists lists={lists} />
         </ul>

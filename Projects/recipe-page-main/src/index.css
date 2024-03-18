@@ -1,12 +1,12 @@
 @font-face {
   font-family: YoungSerif;
   font-weight: 400;
-  src: url('/public/fonts/young-serif/YoungSerif-Regular.ttf');
+  src: url('/fonts/young-serif/YoungSerif-Regular.ttf');
 }
 
 @font-face {
   font-family: Outfit;
-  src: url('/public/fonts/outfit/Outfit-VariableFont_wght.ttf');
+  src: url('/fonts/outfit/Outfit-VariableFont_wght.ttf');
 }
 
 *, *::before, *::after {
@@ -36,6 +36,18 @@ body {
   min-height: 100vh;
 }
 
+h1, h2 {
+  font-family: YoungSerif, sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
+hr {
+  margin-block: 2em;
+  border: 1px solid #ece9e9;
+}
 
 /* button:focus,
 button:focus-visible {
