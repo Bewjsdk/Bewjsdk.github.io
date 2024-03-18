@@ -1,11 +1,12 @@
+import ProfileCard from './components/ProfileCard';
 import './styles/App.scss';
 
 function App() {
 
   return (
-    <>
-      <h1>Jessiacca</h1>
-    </>
+    <main className='card-container'>
+      <ProfileCard />
+    </main>
   )
 }
 
