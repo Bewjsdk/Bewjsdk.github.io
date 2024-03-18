@@ -9,7 +9,7 @@
 #root {
   background: $eggShell;
   min-height: 100vh;
-  padding-block: 3.5em;
+  padding-block: 5em;
 }
 
 ol, ul {
@@ -19,11 +19,25 @@ ol, ul {
     list-style-position: outside;
     padding-inline-start: 1em;
     margin-block-start: 0.5em;
+
+    &::marker {
+      font-weight: 700;
+      color: $pri_nutmeg;
+    }
   }
+}
+
+strong {
+  color: $wengeBrown;
+}
+
+h1 {
+  font-size: 2.4rem;
 }
 
 h2 {
   color: $pri_nutmeg;
+  font-size: 1.75rem;
 }
 
 /* Main Content */
