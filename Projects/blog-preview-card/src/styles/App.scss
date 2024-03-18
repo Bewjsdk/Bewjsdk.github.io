@@ -1,0 +1,21 @@
+@use './colors' as *;
+
+@import './BlogCard';
+
+#root {
+  min-height: 100dvh;
+  background: $yellow;
+  color: $black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-container {
+  background: $white;
+  padding: 1.5em;
+  width: 24rem;
+  border-radius: 1.25em;
+  border: 1px solid $black;
+  filter: drop-shadow(0.5rem 0.5rem $black);
+}

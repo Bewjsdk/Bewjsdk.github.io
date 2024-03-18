@@ -1,5 +1,5 @@
+import './styles/App.scss';
 import BlogCard from "./components/BlogCard"
-
 
 function App() {
 

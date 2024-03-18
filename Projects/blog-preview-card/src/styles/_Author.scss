@@ -1,0 +1,14 @@
+.blog-card-author {
+  display: flex;
+  align-items: center;
+  column-gap: 0.75em;
+
+  & > img {
+    width: 2rem;
+  }
+
+  & > p {
+    font-size: 0.875rem;
+    font-weight: 800;
+  }
+}

@@ -1,0 +1,13 @@
+@import './Content';
+@import './Author';
+
+/* Blog Card Styles */
+.blog-card {
+  /* Picture Inside */
+  > img {
+    display: block;
+    max-width: 100%;
+    border-radius: 0.625em;
+    margin-block-end: 1.5em;
+  }
+}
