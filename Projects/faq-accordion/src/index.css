@@ -1,3 +1,8 @@
+@font-face {
+  font-family: WorkSans;
+  src: url('/assets/fonts/WorkSans-VariableFont_wght.ttf');
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
   padding: 0;
@@ -5,7 +10,7 @@
 }
 
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: WorkSans, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 
