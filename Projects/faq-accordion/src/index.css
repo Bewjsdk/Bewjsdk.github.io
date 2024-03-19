@@ -29,6 +29,12 @@ body {
   min-height: 100dvh;
 }
 
+button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;

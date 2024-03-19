@@ -10,3 +10,11 @@
   justify-content: center;
   align-items: center;
 }
+
+hr {
+  border: 1px solid #8781811a;
+
+  &:last-child {
+    display: none;
+  }
+}

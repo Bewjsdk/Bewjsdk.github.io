@@ -1,0 +1,25 @@
+/* Faqs Contents */
+.faqs-contents {
+  
+  /* Faqs Question */
+  &-item > summary {
+    list-style: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: color 0.25s;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 1em;
+
+    &:hover {
+      color: colors.$primaryColor;
+    }
+  }
+
+  /* Answer */
+  &-item > p {
+    padding-block-end: 1.5em;
+    color: colors.$grayishPurple;
+  }
+}

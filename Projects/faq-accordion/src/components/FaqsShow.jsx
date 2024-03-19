@@ -18,7 +18,6 @@ function FaqsShow({data}) {
       <details 
         open={isShow}
         className={isShow ? "faqs-contents-item active" : "faqs-contents-item"}
-        onClick={(e) => e.preventDefault()}
       >
         {/* Question Topic */}
         <summary>
@@ -31,6 +30,7 @@ function FaqsShow({data}) {
         {/* Answer */}
         <p>{data.answer}</p>
       </details>
+      <hr />
     </>
   )
 }
