@@ -1,2 +1,8 @@
-$mobile: 375px;
+$mobile: 420px;
 $desktop: 1440px;
+
+@media screen and (max-width: $mobile) {
+  #root {
+    background-image: url('/assets/images/background-pattern-mobile.svg');
+  }
+}
