@@ -1,0 +1,12 @@
+@use './colors';
+
+@import './FaqsMain';
+
+#root {
+  min-height: 100dvh;
+  background: url('/assets/images/background-pattern-desktop.svg') 
+              colors.$lightPink repeat-x top left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

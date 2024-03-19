@@ -13,6 +13,7 @@
   font-family: WorkSans, sans-serif;
   line-height: 1.5;
   font-weight: 400;
+  font-size: clamp(14px, 2.5vw, 16px);
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
@@ -25,7 +26,7 @@
 }
 
 body {
-  min-height: 100vh;
+  min-height: 100dvh;
 }
 
 button:focus,

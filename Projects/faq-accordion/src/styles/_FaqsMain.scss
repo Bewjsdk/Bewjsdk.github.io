@@ -1,0 +1,28 @@
+@use './colors';
+
+/* Faqs container */
+.faqs-container {
+  background: colors.$white;
+  color: colors.$darkPurple;
+  padding: 1.75em;
+  border-radius: 1em;
+  width: 35rem;
+  box-shadow: 0 0 2em #8c699141;
+}
+
+/* Fags header */
+.faqs-header {
+  display: flex;
+  column-gap: 0.75em;
+  align-items: center;
+
+  /* Star icon */
+  > img {
+    width: 2rem;
+  }
+
+  /* Topic */
+  > h1 {
+    font-size: 2.5rem;
+  }
+}
