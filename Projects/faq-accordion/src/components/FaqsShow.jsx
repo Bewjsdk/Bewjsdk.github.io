@@ -8,23 +8,16 @@ function FaqsShow({data}) {
   // Show state
   const [isShow, setIsShow] = useState(false);
 
-  // Handle state show and hide
-  const handleShow = () => {
-    setIsShow(prev => !prev);
-  }
-
   return (
     <>
       <details 
-        open={isShow}
-        className={isShow ? "faqs-contents-item active" : "faqs-contents-item"}
+        className="faqs-contents-item"
+        onClick={() => setIsShow(prev => !prev)}
       >
         {/* Question Topic */}
         <summary>
           {data.question}
-          <button onClick={handleShow}>
-            <img src={isShow ? minus : plus} />
-          </button>
+          <img src={isShow ? minus : plus} />
         </summary>
         
         {/* Answer */}

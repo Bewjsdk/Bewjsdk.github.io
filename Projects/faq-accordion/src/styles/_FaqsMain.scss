@@ -6,7 +6,9 @@
 .faqs-container {
   background: colors.$white;
   color: colors.$darkPurple;
-  padding: 1.75em;
+  padding-inline: 1.75em;
+  padding-block-start: 1.75em;
+  padding-block-end: 0.5em;
   border-radius: 1em;
   width: 40rem;
   margin-inline: 2rem;
