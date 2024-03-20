@@ -29,9 +29,9 @@ Users should be able to:
 
 ### Screenshot
 
-![desktopView](/designs/desktop-design.png)
-![mobileView](/designs/mobile-design.png)
-![dropState](/designs/drop-state.png)
+![desktopView](public/designs/desktop-design.png)
+![mobileView](public/designs/mobile-design.png)
+![dropState](public/designs/drop-state.png)
 
 ### Links
 
