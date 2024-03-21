@@ -6,10 +6,10 @@ function Summary() {
     <SummarySection>
       <h2>Summary</h2>
         <ul className="stat-summary">
-          <SummaryLists/>
-          <SummaryLists/>
-          <SummaryLists/>
-          <SummaryLists/>
+          <SummaryLists />
+          <SummaryLists />
+          <SummaryLists />
+          <SummaryLists />
         </ul>
       <Button>Continue</Button>
     </SummarySection>

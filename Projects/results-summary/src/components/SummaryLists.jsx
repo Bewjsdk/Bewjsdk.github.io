@@ -1,10 +1,11 @@
+import { ListItem } from "../styles/style";
+
 function SummaryLists() {
   return (
-    <li>
-      <span>icon</span>
-      <span>TEXT</span>
+    <ListItem>
+      <span>icon TEXT</span>
       <span>80 / 100</span>
-    </li>
+    </ListItem>
   )
 }
 

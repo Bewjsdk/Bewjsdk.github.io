@@ -141,7 +141,7 @@ export const SummarySection = styled.div`
   }
 `;
 
-// Button Component
+// Button Styled Component
 export const Button = styled.button`
   font-family: inherit;
   border: none;
@@ -149,6 +149,7 @@ export const Button = styled.button`
   padding-block: 1em;
   background: ${NEUTRAL_COLORS.darkGrayBlue};
   cursor: pointer;  
+  margin-block-start: 1em;
   /* button active state */
   &:hover {
     background: linear-gradient(
@@ -157,4 +158,14 @@ export const Button = styled.button`
     ${GRADIENTS_COLORS.lightSlateBlueBg}
   );
   }
+`;
+
+// Lists Styled component
+export const ListItem = styled.li`
+  display: flex;
+  justify-content: space-between;
+  background: orange;
+  padding-inline: 1em;
+  padding-block: 0.4em;
+  border-radius: 0.5em;
 `;
