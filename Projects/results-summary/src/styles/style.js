@@ -42,6 +42,7 @@ export const Main = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
+  color: ${NEUTRAL_COLORS.white};
 
   /* Responsive for mobile */
   @media screen and (max-width: ${MOBILE}){
@@ -170,6 +171,7 @@ export const Button = styled.button`
   border-radius: 2em;
   padding-block: 1em;
   background: ${NEUTRAL_COLORS.darkGrayBlue};
+  color: ${NEUTRAL_COLORS.white};
   cursor: pointer;  
   margin-block-start: 1em;
   /* button active state */
