@@ -1,11 +1,12 @@
-import './styles/App.scss';
+import CardResult from './components/CardResult';
+import { Main } from './styles/style';
 
 
 function App() {
   return (
-    <>
-      <h1>Test</h1>
-    </>
+    <Main>
+      <CardResult />
+    </Main>
   )
 }
 
