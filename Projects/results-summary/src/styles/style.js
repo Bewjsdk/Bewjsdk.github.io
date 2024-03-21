@@ -86,6 +86,7 @@ export const ResultSection = styled.div`
   padding-block: 1.95em;
   padding-inline: 1.5em;
   flex: 50%;
+  justify-content: space-between;
 
   /* Elements inside result */
   h2 {
@@ -139,7 +140,6 @@ export const ResultSection = styled.div`
   @media screen and (max-width: ${MOBILE}){
     border-top-right-radius: 0;
     border-top-left-radius: 0;
-    justify-content: center;
   }
 `;
 
