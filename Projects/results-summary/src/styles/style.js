@@ -1,6 +1,6 @@
 import styled from "styled-components";
 /* 
-  ** Variables for all colors **
+  ** Variables for all colors and mobile breakpoints**
 */
 
 // Primary Colors
@@ -27,6 +27,9 @@ const NEUTRAL_COLORS = {
   darkGrayBlue: 'hsl(224, 30%, 27%)',
 };
 
+// Mobile & Tablet Sizes
+const MOBILE = "560px";
+
 
 /* 
   ** Styled Components **
@@ -39,6 +42,11 @@ export const Main = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
+
+  /* Responsive for mobile */
+  @media screen and (max-width: ${MOBILE}){
+   align-items: flex-start;
+  }
 `;
 
 // Card Wrapper
@@ -54,6 +62,14 @@ export const CardMain = styled.div`
   h2 {
     font-size: 1rem;
   }
+
+  /* Responsive for Mobile & Tablets */
+  @media screen and (max-width: ${MOBILE}){
+    flex-direction: column;
+    border-radius: unset;
+    margin: 0;
+    min-height: 100dvh;
+  }
 `;
 
 // Result Section
@@ -67,7 +83,6 @@ export const ResultSection = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  row-gap: 1em;
   padding-block: 1.95em;
   padding-inline: 1.5em;
   flex: 50%;
@@ -119,6 +134,13 @@ export const ResultSection = styled.div`
       }
     }
   }
+
+  /* Responsive for Mobile & Tablets */
+  @media screen and (max-width: ${MOBILE}){
+    border-top-right-radius: 0;
+    border-top-left-radius: 0;
+    justify-content: center;
+  }
 `;
 
 // Summary Section
@@ -165,8 +187,7 @@ export const ListItem = styled.li`
   display: flex;
   position: relative;
   justify-content: space-between;
-  padding-inline: 0.75em;
-  padding-block: 0.6em;
+  padding: 0.45em;
   border-radius: 0.5em;
   font-weight: 600;
 
