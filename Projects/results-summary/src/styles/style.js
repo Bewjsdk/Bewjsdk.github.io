@@ -163,9 +163,56 @@ export const Button = styled.button`
 // Lists Styled component
 export const ListItem = styled.li`
   display: flex;
+  position: relative;
   justify-content: space-between;
-  background: orange;
-  padding-inline: 1em;
-  padding-block: 0.4em;
+  padding-inline: 0.75em;
+  padding-block: 0.6em;
   border-radius: 0.5em;
+  font-weight: 600;
+
+  /* Elements inside Lists */
+  /* Catagory p */
+  p {
+    display: flex;
+    align-items: center;
+    column-gap: 0.5em;
+    z-index: 1;
+    &:first-child > span  {
+      color: ${({type}) => {
+        switch(type) {
+          case 'Reaction': return PRIMARY_COLORS.lightRed;
+          case 'Memory': return PRIMARY_COLORS.orangeYellow;
+          case 'Verbal': return PRIMARY_COLORS.greenTeal;
+          case 'Visual': return PRIMARY_COLORS.cobaltBlue;
+        }
+      }};
+    }
+  }
+  /* Score p */
+  p:last-child {
+    > span {
+      opacity: 0.5;
+    }
+  }
+
+  /* Type Condition Check */
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-radius: inherit;
+    opacity: 0.1;
+
+    background-color: ${({type}) => {
+    switch(type) {
+      case 'Reaction': return PRIMARY_COLORS.lightRed;
+      case 'Memory': return PRIMARY_COLORS.orangeYellow;
+      case 'Verbal': return PRIMARY_COLORS.greenTeal;
+      case 'Visual': return PRIMARY_COLORS.cobaltBlue;
+    }
+  }};
+  }
 `;

@@ -1,12 +1,24 @@
 import { ListItem } from "../styles/style";
+import PropTypes from "prop-types";
 
-function SummaryLists() {
+function SummaryLists({ dataInfo }) {
+  const {category, score, icon} = dataInfo;
   return (
-    <ListItem>
-      <span>icon TEXT</span>
-      <span>80 / 100</span>
+    <ListItem type={category} >
+      <p>
+        <img src={icon} alt={`${category} icon`} />
+        <span>{category}</span>
+      </p>
+      <p>
+        <strong>{score}</strong> 
+        <span>/ 100</span>
+      </p>
     </ListItem>
   )
+}
+
+SummaryLists.propTypes = {
+  dataInfo: PropTypes.object,
 }
 
 export default SummaryLists;
