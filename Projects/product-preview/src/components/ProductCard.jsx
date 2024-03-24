@@ -6,21 +6,22 @@ import { useEffect } from 'react';
 
 function ProductCard() {
   // Check Size
-  const [isMobile, setIsMobile] = useState(false);
+  const [, setIsMobileView] = useState(false);
 
-  // Change Picture when resize
   useEffect(() => {
     window.addEventListener('resize', () => {
       const bodyWidth = document.body.clientWidth;
-      bodyWidth <= 520 ? setIsMobile(true) : setIsMobile(false);
+      bodyWidth > 520 ? setIsMobileView(false) : setIsMobileView(true);
     })
-  },[])
+  });
 
   return (
     <div className="product-card">
       {/* Show Picture */}
       <figure className='product-card-picture'>
-        <img src={!isMobile ? desktopPic : mobilePic} alt="Perfume Picture" />
+        <img 
+        src={document.body.clientWidth > 520 ? desktopPic : mobilePic} 
+        alt="Perfume Picture" />
       </figure>
 
       {/* Product Details */}
