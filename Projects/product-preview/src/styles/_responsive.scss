@@ -4,8 +4,8 @@ $forDesktop: 1440px;
 
 @media screen and (max-width: $forMobile) {
   .main-container {
-    display: block;
-    padding-block: 2em;
+    // display: block;
+    padding-block: 2.5em;
   }
   .product-card {
     grid-template-columns: 1fr;
