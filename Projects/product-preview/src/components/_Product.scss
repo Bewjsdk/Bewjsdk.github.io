@@ -1,0 +1,90 @@
+@use '../styles/colors' as *;
+@forward '../styles/colors';
+
+// Product Card
+.product-card {
+  display: grid;
+  max-width: 40rem;
+  grid-template-columns: repeat(2, 1fr);
+  border-radius: 1em;
+  overflow: hidden;
+  // Picture
+  &-picture {
+    font-size: 0;
+
+    > img {
+      height: 100%;
+    }
+  }
+
+  // Product Details
+  &-details {
+    background: $white;
+    padding: 2rem;
+  }
+  // Product Details Data
+  &-data {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-block-end: 2em;
+    // Product name
+    .product-card-name {
+     letter-spacing: 5px;
+     color: $darkGrayishBlue;
+    }
+    // Product Topic
+    > h1 {
+      line-height: 1;
+    }
+    // Product Content
+    > p {
+      line-height: 1.6;
+      color: $darkGrayishBlue;
+    }
+  }
+
+  // Product Card Value
+  &-value {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    // Value Discount
+    .product-card-discount {
+      font-family: 'Fraunces', sans-serif;
+      font-size: 2.5rem;
+      color: $darkCyan;
+    }
+    // Value Normal
+    .product-card-normal {
+      color: $darkGrayishBlue;
+      text-decoration: line-through;
+    }
+  }
+}
+
+// Button Styles
+.btn {
+  border: none;
+  border-radius: 0.5em;
+  padding-block: 1em;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 0.95rem;
+  background-color: $darkCyan;
+  width: 100%;
+  margin-block-start: 1.5em;
+  cursor: pointer;
+  transition: all 0.25s;
+
+  &:hover {
+    background-color: $veryDarkBlue;
+  }
+
+  &-add {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5em;
+  }
+}

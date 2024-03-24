@@ -1,0 +1,11 @@
+@import '../components/Product';
+
+.main-container {
+  min-height: 100vh;
+  background: $cream;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $veryDarkBlue;
+}
+
