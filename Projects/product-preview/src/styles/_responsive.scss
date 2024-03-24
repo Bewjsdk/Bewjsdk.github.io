@@ -1,2 +1,13 @@
-$forMobile: 375px;
+$forMobile: 520px;
 $forDesktop: 1440px;
+
+
+@media screen and (max-width: $forMobile) {
+  .main-container {
+    display: block;
+    padding-block: 2em;
+  }
+  .product-card {
+    grid-template-columns: 1fr;
+  }
+}

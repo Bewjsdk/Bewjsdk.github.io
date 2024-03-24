@@ -1,7 +1,8 @@
 @import '../components/Product';
 
+
 .main-container {
-  min-height: 100vh;
+  min-height: 100dvh;
   background: $cream;
   display: flex;
   justify-content: center;
@@ -9,3 +10,4 @@
   color: $veryDarkBlue;
 }
 
+@import './responsive';

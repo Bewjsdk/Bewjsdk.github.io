@@ -1,13 +1,26 @@
 import desktopPic from '/images/image-product-desktop.jpg';
 import mobilePic from '/images/image-product-mobile.jpg';
 import cartLogo from '/images/icon-cart.svg';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function ProductCard() {
+  // Check Size
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Change Picture when resize
+  useEffect(() => {
+    window.addEventListener('resize', () => {
+      const bodyWidth = document.body.clientWidth;
+      bodyWidth <= 520 ? setIsMobile(true) : setIsMobile(false);
+    })
+  },[])
+
   return (
     <div className="product-card">
       {/* Show Picture */}
       <figure className='product-card-picture'>
-        <img src={desktopPic} alt="Perfume Picture" />
+        <img src={!isMobile ? desktopPic : mobilePic} alt="Perfume Picture" />
       </figure>
 
       {/* Product Details */}
