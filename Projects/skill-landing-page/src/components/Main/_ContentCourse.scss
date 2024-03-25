@@ -1,0 +1,12 @@
+// Course Container
+.content-course {
+  margin-block-start: 6em;
+}
+
+// Course Lists
+.course-lists {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 2em;
+  row-gap: 4em;
+}
