@@ -9,11 +9,11 @@ import './styles/App.scss';
 function App() {
 
   return (
-    <>
+    <div className='skill-landing-page'>
       <Header />
       <Main />
       <Footer />
-    </>
+    </div>
   )
 }
 

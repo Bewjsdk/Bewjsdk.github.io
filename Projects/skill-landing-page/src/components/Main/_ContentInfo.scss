@@ -1,0 +1,80 @@
+/* Content Info */
+.content-info {
+  display: flex;
+
+  /* Description */
+  &-description {
+    padding-block-start: 5rem;
+    flex: 50%;
+    /* Title */
+    > h1 {
+      font-size: 3.5rem;
+    }
+    /* Text Info */
+    > p {
+      font-size: 1.5rem;
+      font-weight: 300;
+      margin-block: 1.5em;
+    }
+    /* Button Content */
+    .btn-content {
+      background: linear-gradient(180deg, #eb6332, #e52f8a);
+    }
+  }
+
+  /* Picture Container*/
+  &-picture {
+    flex: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    // Profile Frame
+    .profile-frame {
+      background: linear-gradient(180deg, #eb6332, #e52f8a);
+      width: 15rem;
+      aspect-ratio: 2 / 3;
+      border-radius: 1em;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      // Profile Pic
+      > img {
+        position: relative;
+        top: 60%;
+        left: 30%;
+      }
+
+      // Stat
+      .stat {
+        position: absolute;
+        background-color: whitesmoke;
+        color: black;
+        padding-inline-start: 1em;
+        padding-inline-end: 2.5em;
+        padding-block: 0.5em;
+        border-radius: 1em;
+        filter: drop-shadow(0 0 10px rgb(225, 214, 214));
+        font-size: 0.75rem;
+
+        span {
+          font-size: 1.5rem;
+          font-weight: 700;
+        }
+
+        // Stat member
+        &.member {
+          top: 20%;
+          right: 20%;
+        }
+        // Stat course
+        &.course {
+          bottom: 20%;
+          left: 20%;
+        }
+      }
+    }
+  }
+}

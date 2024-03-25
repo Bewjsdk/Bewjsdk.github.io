@@ -1,3 +1,4 @@
+import profilePic from '/stelle-profile.png';
 
 function ContentInfo() {
   return (
@@ -8,8 +9,8 @@ function ContentInfo() {
         <h1>Maximize skill, minimize budget</h1>
         {/* Description */}
         <p>
-          Our modern courses across a range of in-demand
-          skills will give you the knowledge you need to live
+          Our modern courses across a range of in-demand 
+          skills will give you the knowledge you need to live 
           the life you want.
         </p>
         {/* Link on Content */}
@@ -18,14 +19,18 @@ function ContentInfo() {
 
       {/* Content Picture & Some Stat */}
       <figure className="content-info-picture">
-        <img src="" alt="Profile Picture" />
-        {/* Member Stats */}
-        <div className="member-stat">
-          <p>Members <br/> 29K</p>
-        </div>
-        {/* Course Hours Stats */}
-        <div className="course-stat">
-          <p>Course hours <br/> 1,451 hr</p>
+        {/* Profile Frame */}
+        <div className="profile-frame">
+          {/* Profile */}
+          <img src={profilePic} alt="Profile Picture" />
+          {/* Member Stats */}
+          <div className="member stat">
+            <p>Members <br/> <span>29K</span></p>
+          </div>
+          {/* Course Hours Stats */}
+          <div className="course stat">
+            <p>Course hours <br/> <span>1,451 hr</span></p>
+          </div>
         </div>
       </figure>
     </section>

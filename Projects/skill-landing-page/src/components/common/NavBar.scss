@@ -1,0 +1,18 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-block: 1rem;
+
+  /* Logo NavBar */
+  & > h3 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  // Button Top Nav
+  .btn-default {
+    background: rgb(239, 60, 5);
+    color: whitesmoke;
+  }
+}
