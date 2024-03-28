@@ -1,16 +1,9 @@
 @use '../assets/colors';
+@use '../assets/cardLayout' as layout;
 
 // Rating Card
 .rating-card {
-  inline-size: 27.34rem;
-  background: colors.$bg-linear;
-  margin-inline: auto;
-  padding: 2.14rem;
-  border-radius: 1.5em;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  row-gap: 2.14rem;
+  @include layout.card;
 
   // Star Logo
   & > img {

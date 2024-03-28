@@ -1,7 +1,9 @@
+import { useState } from 'react';
 import RatingSubmit from './RatingSubmit';
 import starLogo from '/images/icon-star.svg';
 
 function RatingBox() {
+  const [isSubmit, setIsSubmit] = useState(false);
   // Rating Scores
   const ratingScores = [1, 2, 3, 4, 5];
   // Create Rating Score Button
@@ -10,6 +12,10 @@ function RatingBox() {
   ));
 
   return (
+    // Submit will show rating submit (thank you)
+    !isSubmit ? <RatingSubmit/> :
+    
+    // Not submit will show rating-card
     <div className="rating-card">
       {/* Star Logo */}
       <img src={starLogo} alt="Orange Star" />

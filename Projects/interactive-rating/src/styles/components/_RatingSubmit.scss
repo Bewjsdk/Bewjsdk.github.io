@@ -1,0 +1,7 @@
+@use '../assets/colors';
+@use '../assets/cardLayout' as layout;
+
+// Rating Submit
+.rating-submit {
+  @include layout.card;
+}
