@@ -5,6 +5,7 @@
 .rating-submit {
   @include layout.card;
   align-items: center;
+  position: relative;
 
   // Rating show score
   .rating-show-score {
@@ -27,4 +28,12 @@
       color: colors.$lightGrey;
     }
   }
+}
+
+.countdown-time {
+  position: absolute;
+  font-size: 2rem;
+  color: colors.$orange;
+  right: 10%;
+  top: 5%;
 }
