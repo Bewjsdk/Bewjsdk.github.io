@@ -50,7 +50,8 @@ function RatingSubmit({score, returnRating}) {
 }
 
 RatingSubmit.propTypes = {
-  score: PropTypes.number
+  score: PropTypes.number,
+  returnRating: PropTypes.func,
 }
 
 export default RatingSubmit
