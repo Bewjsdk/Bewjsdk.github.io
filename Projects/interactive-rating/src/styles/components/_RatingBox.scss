@@ -1,0 +1,78 @@
+@use '../assets/colors';
+
+// Rating Card
+.rating-card {
+  inline-size: 27.34rem;
+  background: colors.$bg-linear;
+  margin-inline: auto;
+  padding: 2.14rem;
+  border-radius: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  row-gap: 2.14rem;
+
+  // Star Logo
+  & > img {
+    padding: 1rem;
+    border-radius: 50%;
+    background: colors.$darkBlue;
+  }
+
+  // Rating Card Info
+  &-info {
+    // Description
+    & > p {
+      color: colors.$lightGrey;
+    }
+  }
+
+  // Rating Card Score
+  &-score {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+
+    // Button Rating Score
+    & > .btn-rating {
+      border-radius: 50%;
+      width: 50px;
+      aspect-ratio: 2 / 2;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      background: colors.$darkBlue;
+      color: colors.$lightGrey;
+      transition: all 0.25s;
+      
+      // Mouse Hover
+      &:hover {
+        background: colors.$orange;
+        color: colors.$white;
+      }
+
+      // Selected Button
+      &.selected {
+        background: colors.$mediumGrey;
+        color: colors.$white;
+      }
+    }
+  }
+
+  // Submit Button
+  .btn-submit {
+    width: 100%;
+    border-radius: 2em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    background: colors.$orange;
+    color: colors.$white;
+    transition: all 0.25s;
+
+    // Submit Button Hover
+    &:hover {
+      background: colors.$white;
+      color: colors.$orange;
+    }
+  }
+}

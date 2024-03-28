@@ -31,9 +31,6 @@ function RatingBox() {
 
       {/* Submit Rating */}
       <button className='btn btn-submit'>SUBMIT</button>
-
-      <RatingSubmit />
-
     </div>
   )
 }
